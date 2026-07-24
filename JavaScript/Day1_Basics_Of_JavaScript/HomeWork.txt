@@ -1,0 +1,3 @@
+1. Exploring tailwind CSS 
+2. Complete the recall & concept from session 1 to 15 (you can take help of a GPT as well if you stuck you can ask me )
+3. JavaScript -> Day1 --> all codes 
