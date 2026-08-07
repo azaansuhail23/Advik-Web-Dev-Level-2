@@ -49,5 +49,6 @@ let bigInt = 1000000000000000000000000000000000000000000000000000n;
 console.log(bigInt);
 console.log(typeof bigInt);
 
-//8. object + array + function => non-primitive data types --> We have not learned will learn in upcoming sessionk
+//8. object + array + function => non-primitive data types --> We have not learned will learn in upcoming session
 
+k
