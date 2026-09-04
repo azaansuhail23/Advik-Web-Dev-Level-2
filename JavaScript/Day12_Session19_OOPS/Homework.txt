@@ -1,0 +1,2 @@
+1. Visit ChaptGPT : And learn OOPS in javascript and inheritance and understand the code. 
+2. Create Mobile class and its object.
