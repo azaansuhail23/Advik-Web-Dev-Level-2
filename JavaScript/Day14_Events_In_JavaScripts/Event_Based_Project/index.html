@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: darkcyan;
+    }
+    h1{
+        text-align:center;
+    }
+</style>
+
+<body>
+    <h1 id="message">Press any key!</h1>
+
+    <script>
+        const message=document.querySelector("#message");
+
+        document.addEventListener("keydown",function(event){
+            message.textContent="You Pressed : " + event.key
+        })
+    </script>
+</body>
+</html>
