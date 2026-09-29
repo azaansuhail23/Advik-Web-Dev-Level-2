@@ -1,5 +1,5 @@
 
- // 1. Our quiz questions
+ // 1. Our quiz questions -> List of Objects
  const questions = [
     {
         question: "Which language creates the structure of a webpage?",
@@ -106,11 +106,11 @@
 
 // 2. Get things from our webpage
 const questionElement = document.getElementById("question");
-const answerButtons = document.getElementById("answer-buttons");
+const answerButtons = document.getElementById("answer-buttons"); // It is a HTML Collection
 const nextButton = document.getElementById("next-btn");
 const resultElement = document.getElementById("result");
 const scoreElement = document.getElementById("score");
-const questionNumberElement = document.getElementById("question-number");
+const questionNumberElement = document.getElementById("question-number");  //Showing current question
 
 
 // 3. Our variables
@@ -132,7 +132,7 @@ function showQuestion() {
         "Question " + (questionIndex + 1) + " of " + questions.length;
 
     // Remove old answer buttons
-    answerButtons.innerHTML = "";
+    answerButtons.innerHTML = ""; //Empty String -->Nothing
 
     // Clear the previous result
     resultElement.innerText = "";
@@ -153,7 +153,7 @@ function showQuestion() {
         // Check the answer when clicked
         button.addEventListener("click", function() {
 
-            checkAnswer(answer, button);
+            checkAnswer(answer, button); //Another function whether the answer is correct or not
 
         });
 
@@ -174,7 +174,7 @@ function checkAnswer(answer, selectedButton) {
 
         selectedButton.classList.add("correct");
 
-        score = score + 1;
+        score = score + 1; //If the option is correct you have to increase the score also and show it on the screen.
 
         scoreElement.innerText = "Score: " + score;
 
@@ -189,7 +189,7 @@ function checkAnswer(answer, selectedButton) {
     let buttons = answerButtons.children;
 
     for (let i = 0; i < buttons.length; i++) {
-
+       //By default disabled property is false
         buttons[i].disabled = true;
 
         // Show the correct answer in green
@@ -208,12 +208,12 @@ function nextQuestion() {
 
     questionIndex = questionIndex + 1;
 
-    // Are there more questions?
+    // Are there more questions? Ex : current ques=5 & total=10
     if (questionIndex < questions.length) {
 
         showQuestion();
 
-    } else {
+    } else {  //Ex : curr=ques=10 & total=10
 
         showResult();
     }
@@ -266,5 +266,5 @@ nextButton.addEventListener("click", function() {
 });
 
 
-// 10. Start the quiz
+// 10. Start the quiz : Final function
 startQuiz();
