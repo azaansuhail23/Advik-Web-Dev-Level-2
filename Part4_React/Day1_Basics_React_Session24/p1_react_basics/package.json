@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite", 
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -13,6 +13,8 @@
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
+
+  // You need only when you are building the project
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/react": "^19.2.18",
