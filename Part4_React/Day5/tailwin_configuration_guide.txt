@@ -1,0 +1,27 @@
+Step1: Visit this link --> https://v3.tailwindcss.com/docs/guides/vite
+Step2 : 
+        npm install -D tailwindcss@3 postcss autoprefixer
+        npx tailwindcss init -p
+
+        Paste these two commands in integrated terminal
+ 
+Step 3: Remove everything from tailwind.config.js file and paste the below there in the file : 
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+Step4 : Look over the index.css file and remove everything and paste the below one 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
