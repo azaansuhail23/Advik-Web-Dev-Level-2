@@ -1,0 +1,11 @@
+div{
+    font-size:2rem;
+}
+
+span{
+    font-size:60px;
+}
+
+span article{
+    font-size: 5.em;
+}
