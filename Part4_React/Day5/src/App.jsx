@@ -8,4 +8,4 @@ export default function App(){
   )
 }
 
-// Link tailwind css :https://v3.tailwindcss.com/docs/guides/vite
+//Note Link tailwind css :https://v3.tailwindcss.com/docs/guides/vite
