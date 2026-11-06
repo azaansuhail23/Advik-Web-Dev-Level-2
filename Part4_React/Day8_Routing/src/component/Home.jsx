@@ -1,7 +1,7 @@
-export default Home(){
-    return (
-        <>
-        <h1> This is Home Page </h1
-        </>
-    )
+import React from 'react'
+
+export const Home = () => {
+  return (
+    <div>This is Home Page</div>
+  )
 }

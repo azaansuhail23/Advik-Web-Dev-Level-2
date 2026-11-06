@@ -1,7 +1,7 @@
-export default Contact(){
-    return (
-        <>
-        <h1> This is Contact Page </h1
-        </>
-    )
+import React from 'react'
+
+export const Contact = () => {
+  return (
+    <div> This is Contact Page</div>
+  )
 }
